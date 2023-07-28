@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/563f5ed93d.js" crossorigin="anonymous"></script>
+    <title>Skills</title>
+</head>
+
+<body>
+    <nav class="nav-bar-secondary">
+        <div class="logo">
+            <img class="logo-img" src="images/logo.svg" alt="">
+            <p class="logo-txt">DoubleEss</p>
+        </div>
+        <div class="nav-items "><a href="index.html">Home</a></div>
+
+    </nav>
+    <div class="skills-container">
+        <main class="skills" id="containerDiv">
+            <h1>Skills</h1>
+            <h3><i class="fa-brands fa-html5"></i> HTML</h3>
+            <h3><i class="fa-brands fa-css3-alt"></i> CSS</h3>
+            <h3><i class="fa-brands fa-square-js"></i> JavaScript</h3>
+            <h3><i class="fa-brands fa-react"></i> React</h3>
+            <h3><i class="fa-brands fa-python"></i> Python</h3>
+            <h3><i class="fa-brands fa-java"></i> Java</h3>
+        </main>
+        <form>
+            <h3>Add new skill:</h3>
+            <label>New Skill: </label>
+            <input type="text" id="skill-name">
+            <button type="button" class="btn" id="add-btn" onclick="displaySkill()">Add</button>
+            <button class="btn" type="button" id="remove-btn">Remove</button>
+        </form>
+
+        <aside class="cv">
+            <h3>Download CV:</h3>
+            <a href="resources/CV-Shandana-doc.docx">DOC</a>
+            <a href="resources/CV-Shandana-pdf.pdf">PDF</a>
+        </aside>
+    </div>
+    <footer class="skills-footer">
+        <p class="footer-font">&copy; 2022 DoubleEss Inc.</p>
+    </footer>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

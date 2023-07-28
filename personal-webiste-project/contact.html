@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/563f5ed93d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="nav-bar-secondary">
+        <div class="logo">
+            <img class="logo-img" src="images/logo.svg" alt="">
+            <p class="logo-txt">DoubleEss</p>
+        </div>
+        <div class="nav-items "><a href="index.html">Home</a></div>
+
+    </nav>
+    <h1>Contact me</h1>
+    <hr>
+    <section class="contact-form">
+        <form action="" id="form" name="contactForm" onsubmit = "return(validate());">
+            <h2>Send a message:</h2>
+            <div class="form-group">
+                <label for="first-name">First Name </label>
+                <input type="text" id="first-name" name="first-name" maxlength="100" autofocus>
+                
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name </label>
+                <input type="text" name="last-name" id="last-name" maxlength="100" autofocus>
+   
+            </div>
+            <div class="form-group">
+                <div class="form-group">
+                    <label class="form-label" for="gender">Gender </label>
+                    <select name="gender" id="gender">
+                        <option value="">Choose a gender</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">Prefer no to disclose</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email </label>
+                <input type="email" id="email" name="email">
+               
+            </div>
+            <div class="form-group">
+                <label for="website">Website Address </label>
+                <input type="text" id="webiste">
+               
+            </div>
+            <div class="form-group">
+                <label for="msg">Comment</label>
+                <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+              
+            </div>
+            <div class="buttons">
+                <button class="btn" type="reset">Reset</button>
+                <button class="btn" >Submit</button>
+            </div>
+        </form>
+    </section>
+    <hr>
+    <section>
+        <h3>Follow me on social media</h3>
+        <div class="social-media">
+            <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+            <a href="https://www.twitter.com"><i class="fa-brands fa-square-twitter fa-2x"></i></a>
+            <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="footer-font">&copy; 2022 DoubleEss Inc.</p>
+    </footer>
+    <button id="back-to-top">Top</button>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

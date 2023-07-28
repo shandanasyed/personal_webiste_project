@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorship</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body onload="signupAlert()">
+    <nav class="nav-bar-secondary">
+        <div class="logo">
+            <img class="logo-img" src="images/logo.svg" alt="">
+            <p class="logo-txt">DoubleEss</p>
+        </div>
+        <div class="nav-items "><a href="index.html">Home</a></div>
+
+    </nav>
+    <h1>Mentorship</h1>
+    <p class="mentor-content">Feeling lost in the field of Software Development? Worry not!
+        We have started a mentorship programme for aspiring Software Developers.
+        Get the support and encouragemnet you need in your journey. Sign up with the form
+        below and we will contact you as soon as we find a suitable mentor for you.</p>
+
+    <hr>
+    <form action="https://formspree.io/f/xwkzoeal" method="post">
+        <h2>Sign-up</h2>
+        <div class="form-group">
+            <label for="name">Name: </label>
+            <input type="text" form="name" maxlength="100" autofocus>
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="email">Email </label>
+            <input type="email" name="email" id="email" maxlength="200">
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="age">Age </label>
+            <input type="number" id="age" min="13" max="100">
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="interest">Select a field of interest </label>
+            <select name="interest" id="interest">
+                <option value="1">Front-end Development</option>
+                <option value="2">Back-end Development</option>
+                <option value="3">Full-stack Development</option>
+                <option value="4">Python</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="about-self">Tell us more about yourself: </label>
+            <textarea name="about-self" id="about-self" cols="20" rows="10">I am ......</textarea>
+        </div>
+        <button class="btn" onclick="submitAlert()">Submit</button>
+    </form>
+    <footer class="footer">
+        <p class="footer-font">&copy; 2022 DoubleEss Inc.</p>
+    </footer>
+    <button id="back-to-top">Top</button>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

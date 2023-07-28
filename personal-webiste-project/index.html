@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shandana's Homepage</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+
+
+</head>
+
+<body onscroll="scrollFunction()" onload="addDate()">
+    <header class="banner">
+        <nav class="nav-bar">
+            <div class="logo">
+                <img class="logo-img" src="images/logo.svg" alt="">
+                <p class="logo-txt">DoubleEss</p>
+            </div>
+            <ul class="nav-items">
+                <li class="about"><a href="index.html" class="no-decor">Home</a></li>
+                <li class="contact"><a href="contact.html">Contact</a></li>
+                <li class="mentorship"><a href="mentor.html">Mentorship</a></li>
+            </ul>
+        </nav>
+        <div class="banner-content">
+            <div class="intro">
+                <h1>Hello! I am Shandana.</h1>
+                <p class="about-me">A part-time Doctor and full-time Software Engineer.</p>
+            </div>
+            <img class="banner-img" src="images/banner-img.svg" alt="">
+        </div>
+    </header>
+    <section class="main-content">
+        <article class="card">
+            <a href="skills.html">
+                <img class="card-img" src="images/skills.svg" alt="">
+                <h2>Skills</h2>
+            </a>
+        </article>
+        <article class="card">
+            <a href="projects.html">
+                <img class="card-img" src="images/projects.svg" alt="">
+                <h2>Projects</h2>
+            </a>
+        </article>
+        <article class="card">
+            <a href="gallery.html">
+                <img class="card-img" src="images/gallery.svg" alt="">
+                <h2>Gallery</h2>
+            </a>
+        </article>
+    </section>
+
+
+    <div id="current-date"></div>
+    <footer class="footer">
+        <p class="footer-font">&copy; 2022 DoubleEss Inc.</p>
+    </footer>
+    <button id="back-to-top" onclick="topFunction()">Top</button>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
